@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
-const MONGO_URL = "mongodb://localhost:27017/finance_tracker";
+const MONGO_URL =
+  process.env.MONGO_URL || "mongodb://localhost:27017/finance_tracker";
 
 export const conMongoDb = async () => {
   try {
